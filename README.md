@@ -1,10 +1,10 @@
-# Configuração Inicial do Git e GitHub
+#  Configuração Inicial do Git e GitHub
 * Instalação do Git No Windows
 
-1. Acesse <git-scm.com> e baixe o instalador do Git para Windows.
+1. Acesse  <http://git-scm.com/download/win> e baixe o instalador do Git para Windows.
 2. Execute o instalador e siga as instruções. Durante a instalação, você pode escolher as configurações padrão.
 
-## Configuração Inicial do Git 
+## 1 - Configuração Inicial do Git 
 Depois de instalar o Git, você precisa configurá-lo com seu nome de usuário e email. Isso é importante porque cada commit que você fizer usará essas informações.
 
 * Abra o Terminal (ou Git Bash no Windows).
@@ -30,7 +30,7 @@ git config --global user.name "Seu Nome"
 * Iniciar um repositório local e enviar para o remoto.
 * Iniciar um repositório  remoto e trazer para o local.
 
-### Inicialização de um novo repositório local:
+### 2 - Inicialização de um novo repositório local:
 1. Crie um novo diretório e navegue até ele:
 ``` 
 mkdir meu_projeto
@@ -41,42 +41,80 @@ cd meu_projeto
 git init
 ``` 
 3. Adicione arquivos ao repositório 
+
 ```
-git add README.md  
+echo "# Meu Projeto" >> README.md
+git add README.md
+  
 ```
-ou utilize 
-``` 
-git add . 
-``` 
-para adicionar ao stage todos arquivos da pasta
+Se ja tiver arquivos criados use ` git add . ` para adicionar ao stage todos arquivos da pasta
 
 4. Faça o primeiro commit local 
 ``` 
 git commit -m "Primeiro commit"
+git branch -M main
 ``` 
+
 5. crie o repositório remoto no gitHub sem criar o README e conecta o local com o remoto 
-pode utilizar o 
-``` 
-git remote -v 
-``` 
-para visualizar os repositorios remotos 
 ``` 
 git remote add origin https://github.com/usuario/meu-projeto.git
 ``` 
-6 .  Enviar o repositório local para o remoto
+
+6.  Enviar o repositório local para o remoto
 Envie os commits locais para o repositório remoto:
 ```
 git push -u origin main
 ``` 
 
-### Inicialização de um novo repositório remoto:
+### 3 - Inicialização de um novo repositório remoto:
 1. Crie um novo repositório no GitHub e Copie a URL do repositório.
 
-2. Clone o repositório 
+2. Crie um novo diretório e navegue até ele:
+``` 
+mkdir meu_projeto
+cd meu_projeto
+``` 
+
+3. Clone o repositório 
 ```
 git clone https://github.com/usuario/repo.git
 ``` 
-* A vantagen de fazer o processo de inicialização remota é que ja vem feita essa configuração pronta 
+
+4. pode utilizar o `git remote -v ` para visualizar os repositorios remotos
+* A vantagem de fazer o processo de inicialização remota é que ja vem feita essa configuração pronta  
+
+5. utilizar ` git add . ` para colocar no stage 
+
+6. Para realizar o commit 
+```
+git commit -m "Primeiro commit"
+git branch -M main
+``` 
+7. Para enviar ao remoto de volta utilize 
+```
+git push -u origin main
+``` 
+
+#### Diferença entre repositórios locais e remotos:
+-Repositório Local: Onde você trabalha diretamente no seu computador.
+-Repositório Remoto: Onde o código é armazenado em um servidor, permitindo colaboração (ex.: GitHub, GitLab)
+
+### 4 - Trabalhando com Múltiplos Branches
 
 
+
+
+
+
+
+
+
+
+
+### Alguns comandos interessantes 
+-git branch : visualiza qual branch está 
+-git checkout -b main : criar e mudar para a branch main 
+-git checkout main : confirme q esta no branch main
+-git branch -m master main : renomeia master para main 
+-git config --global init.defaultBranch main : define main como branch padrao 
 
