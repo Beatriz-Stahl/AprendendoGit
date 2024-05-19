@@ -26,11 +26,11 @@ git config --global user.name "Seu Nome"
  git config --global --list 
 ``` 
 
-# Feito essas configurações existem duas formas de começar a criar um projeto
+### Feito essas configurações existem duas formas de começar a criar um projeto
 * Iniciar um repositório local e enviar para o remoto.
 * Iniciar um repositório  remoto e trazer para o local.
 
-### 2 - Inicialização de um novo repositório local:
+## 2 - Inicialização de um novo repositório local:
 1. Crie um novo diretório e navegue até ele:
 ``` 
 mkdir meu_projeto
@@ -66,7 +66,7 @@ Envie os commits locais para o repositório remoto:
 git push -u origin main
 ``` 
 
-### 3 - Inicialização de um novo repositório remoto:
+## 3 - Inicialização de um novo repositório remoto:
 1. Crie um novo repositório no GitHub e Copie a URL do repositório.
 
 2. Crie um novo diretório e navegue até ele:
@@ -97,16 +97,44 @@ git push -u origin main
 
 #### Diferença entre repositórios locais e remotos:
 -Repositório Local: Onde você trabalha diretamente no seu computador.
+
 -Repositório Remoto: Onde o código é armazenado em um servidor, permitindo colaboração (ex.: GitHub, GitLab)
 
-### 4 - Trabalhando com Múltiplos Branches
+## 4 - Trabalhando com Múltiplos Branches
+* Criando um Novo Branch
 
+1. Para criar um novo branch, use o comando:
+```
+git branch nome-do-branch
+``` 
+2. Troque para o novo branch:
+```
+git checkout nome_do_branch
+``` 
+obs: Criar um Novo Ramo e Mudar para ele use :` git checkout -b novo-ramo `, você pode criar um novo ramo e imediatamente mudar para esse ramo.
 
+3. Restaurar Arquivos: Para restaurar um arquivo para o estado de um determinado commit.
+```
+git checkout commit -- arquivo
+``` 
+Isso é útil se você quiser desfazer mudanças em um arquivo específico e voltar a uma versão anterior do mesmo.
 
+4. Restaurar Todo o Diretório de Trabalho: Para restaurar todo o diretório de trabalho para o estado de um determinado ramo ou commit.
+``` 
+git checkout commit
+``` 
 
+5. Envie a branch para o repositório remoto e defina o upstream
+```
+git push -u origin nome-da-branch
+```
 
+* Uso prático de branches para diferentes ambientes (desenvolvimento, produção):
 
+Use branches como development e production para separar o código em diferentes estágios.
+Mescle (merge) as mudanças de development para production quando estiver pronto para o lançamento.
 
+## 5 - Integração com IDEs
 
 
 
@@ -117,4 +145,4 @@ git push -u origin main
 -git checkout main : confirme q esta no branch main
 -git branch -m master main : renomeia master para main 
 -git config --global init.defaultBranch main : define main como branch padrao 
-
+-git log --oneline : mostra linha a linha os commits 
