@@ -7,6 +7,7 @@
 6. [Estrategias de Branching](#estrategias-de-branching)
 7. [Commits e Gerenciamento de Versao](#commits-e-gerenciamento-de-versao)
 8. [Fluxo de Trabalho Avancado](#fluxo-de-trabalho-avancado)
+9. [Resolucao de conflitos](#resolucao-de-conflitos)
 
 #  Configuração Inicial do Git e GitHub
 * Instalação do Git No Windows
@@ -14,7 +15,7 @@
 1. Acesse  <http://git-scm.com/download/win> e baixe o instalador do Git para Windows.
 2. Execute o instalador e siga as instruções. Durante a instalação, você pode escolher as configurações padrão.
 
-## Configuracao Inicial do Git 
+# Configuracao Inicial do Git 
 Depois de instalar o Git, você precisa configurá-lo com seu nome de usuário e email. Isso é importante porque cada commit que você fizer usará essas informações.
 
 * Abra o Terminal (ou Git Bash no Windows).
@@ -40,7 +41,7 @@ git config --global user.name "Seu Nome"
 * Iniciar um repositório local e enviar para o remoto.
 * Iniciar um repositório  remoto e trazer para o local.
 
-## Inicializacao de um novo repositório local:
+# Inicializacao de um novo repositorio local:
 1. Crie um novo diretório e navegue até ele:
 ``` 
 mkdir meu_projeto
@@ -76,7 +77,7 @@ Envie os commits locais para o repositório remoto:
 git push -u origin main
 ``` 
 
-## Inicializacao de um novo repositório remoto:
+# Inicializacao de um novo repositorio remoto:
 1. Crie um novo repositório no GitHub e Copie a URL do repositório.
 
 2. Crie um novo diretório e navegue até ele:
@@ -110,7 +111,7 @@ git push -u origin main
 
 -Repositório Remoto: Onde o código é armazenado em um servidor, permitindo colaboração (ex.: GitHub, GitLab)
 
-## Trabalhando com Multiplos Branches
+# Trabalhando com Multiplos Branches
 * Criando um Novo Branch
 
 1. Para criar um novo branch, use o comando:
@@ -144,7 +145,7 @@ git push -u origin nome-da-branch
 Use branches como development e production para separar o código em diferentes estágios.
 Mescle (merge) as mudanças de development para production quando estiver pronto para o lançamento.
 
-## Integracao com IDEs
+# Integracao com IDEs
 ### VScode:
 * Instalação da extensão Git:
 1. Abra o VSCode.
@@ -192,7 +193,7 @@ git checkout development
 git merge feature/nova_funcionalidade
 ```
 
-## Commits e Gerenciamento de Versao 
+# Commits e Gerenciamento de Versao 
 * Faça commits frequentemente para registrar o progresso:
 ```
 git add .
@@ -214,7 +215,7 @@ git push origin --tags
 ```
 git tag
 ```
-## Fluxo de Trabalho Avancado
+# Fluxo de Trabalho Avancado
 ### BACKLOG: 
 é uma lista ordenada de tudo que é conhecido que precisa ser feito no projeto.
  #### Componentes do backlog: 
@@ -260,10 +261,48 @@ O versionamento utiliza um esquema de três números para denotar versões de so
 
 4. Documentação no Changelog: Atualize o changelog para cada versão lançada, detalhando as mudanças feitas.
 
-## 9 - Resolução de conflitos 
+# Resolucao de conflitos 
+A resolução de conflitos é uma parte essencial do uso do Git, especialmente quando se trabalha em projetos colaborativos. Conflitos ocorrem quando mudanças feitas em diferentes branches afetam as mesmas partes de um arquivo.
 
+#### Técnicas de Resolução de Conflitos
+1. Identificar o Conflito:
+Git interrompe o processo de merge e marca os arquivos conflitantes. exemplo:
+```
+CONFLICT (content): Merge conflict in arquivo.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+2. Examinando o Arquivo Conflitante:
+O arquivo conflitante terá marcadores que indicam as áreas em conflito. exemplo: 
+```
+<<<<<<< HEAD
+Sua alteração
+=======
+Alteração do branch a ser combinado
+>>>>>>> branch-a-ser-combinado
+```
+* <<<<<<< HEAD: Indica o início do bloco que contém as mudanças feitas no branch atual.
 
+* =======: Separa as mudanças do branch atual das mudanças do branch que está sendo combinado.
 
+* >>>>>>> branch-a-ser-combinado: Indica o final do bloco que contém as mudanças feitas no branch que está sendo combinado. 
+
+3. Editando o Arquivo Conflitante 
+Você precisa editar o arquivo manualmente para resolver o conflito. Escolha uma das mudanças, combine ambas, ou crie uma nova solução que incorpore ambas as mudanças.
+
+4. Marcando o Conflito como Resolvido exemplo:
+``` 
+git add arquivo.txt
+```
+
+5. Finalizando o Merge.
+finalize o merge com um commit:
+```
+git commit -m "Resolve conflitos de merge"
+```
+* Ferramentas de Linha de Comando 
+Use `git status` para ver quais arquivos estão em conflito
+
+Use `git diff` para visualizar as diferenças entre os arquivos conflitantes.
 
 
 
