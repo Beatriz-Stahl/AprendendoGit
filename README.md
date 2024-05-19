@@ -8,6 +8,7 @@
 7. [Commits e Gerenciamento de Versao](#commits-e-gerenciamento-de-versao)
 8. [Fluxo de Trabalho Avancado](#fluxo-de-trabalho-avancado)
 9. [Resolucao de conflitos](#resolucao-de-conflitos)
+10. [Alguns comandos interesantes](#alguns-comandos-interessantes)
 
 #  Configuração Inicial do Git e GitHub
 * Instalação do Git No Windows
@@ -330,16 +331,10 @@ Ao criar um Pull Request (PR) no GitHub, ele verificará automaticamente se há 
 4. Após resolver os conflitos, clique em "Mark as resolved" e então "Commit merge".
 
 
-
-
-
-
-
-
-### Alguns comandos interessantes 
--git branch : visualiza qual branch está 
--git checkout -b main : criar e mudar para a branch main 
--git checkout main : confirme q esta no branch main
--git branch -m master main : renomeia master para main 
--git config --global init.defaultBranch main : define main como branch padrao 
--git log --oneline : mostra linha a linha os commits 
+## Alguns comandos interessantes 
+- git branch : visualiza qual branch está 
+- git checkout -b main : criar e mudar para a branch main 
+- git checkout main : confirme q esta no branch main
+- git branch -m master main : renomeia master para main 
+- git config --global init.defaultBranch main : define main como branch padrao 
+- git log --oneline : mostra linha a linha os commits 
