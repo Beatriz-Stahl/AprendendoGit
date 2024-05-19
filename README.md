@@ -322,6 +322,14 @@ git commit -m "Resolve conflitos de merge"
 
 ``` 
 ### Pull Requests 
+Ao criar um Pull Request (PR) no GitHub, ele verificará automaticamente se há conflitos com o branch de destino. Se houver conflitos, o GitHub exibirá uma mensagem indicando que o PR não pode ser mesclado automaticamente. 
+
+1. Vá até o PR com conflitos.
+2. Clique em "Resolve conflicts".
+3. Use o editor do GitHub para resolver os conflitos
+4. Após resolver os conflitos, clique em "Mark as resolved" e então "Commit merge".
+
+
 
 
 
