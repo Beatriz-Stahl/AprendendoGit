@@ -135,6 +135,36 @@ Use branches como development e production para separar o código em diferentes 
 Mescle (merge) as mudanças de development para production quando estiver pronto para o lançamento.
 
 ## 5 - Integração com IDEs
+### VScode:
+* Instalação da extensão Git:
+1. Abra o VSCode.
+Vá para Extensões (Ctrl+Shift+X) e procure por "GitLens" e "Git History".
+
+2. Instale as extensões.
+
+* Gerenciamento de branches e commits através do VSCode:
+1. Abra o painel de controle de versão (Ctrl+Shift+G).
+
+2. Use os botões e menus para criar, alternar e gerenciar branches, commits e outras operações Git.
+
+### Eclipse:
+* Configuração do plugin EGit:
+1. Vá para Help > Eclipse Marketplace.
+
+2. Procure por "EGit" e instale.
+
+* Execução de operações Git dentro do Eclipse:
+1. Navegue até Window > Show View > Other > Git.
+
+2. Use as opções para clonar repositórios, criar branches, realizar commits, etc.
+
+### Android Studio:
+* Uso do controle de versão integrado:
+1. Vá para VCS > Enable Version Control Integration.
+
+2. Selecione Git e siga as instruções para configurar seu repositório.
+
+3. Use as opções no menu VCS para gerenciar branches, commits, etc.
 
 
 
