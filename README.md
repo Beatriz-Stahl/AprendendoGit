@@ -264,7 +264,7 @@ O versionamento utiliza um esquema de três números para denotar versões de so
 # Resolucao de conflitos 
 A resolução de conflitos é uma parte essencial do uso do Git, especialmente quando se trabalha em projetos colaborativos. Conflitos ocorrem quando mudanças feitas em diferentes branches afetam as mesmas partes de um arquivo.
 
-#### Técnicas de Resolução de Conflitos
+### Técnicas de Resolução de Conflitos
 1. Identificar o Conflito:
 Git interrompe o processo de merge e marca os arquivos conflitantes. exemplo:
 ```
@@ -284,7 +284,7 @@ Alteração do branch a ser combinado
 
 * =======: Separa as mudanças do branch atual das mudanças do branch que está sendo combinado.
 
-* >>>>>>> branch-a-ser-combinado: Indica o final do bloco que contém as mudanças feitas no branch que está sendo combinado. 
+* ´>>>>>>> branch-a-ser-combinado: Indica o final do bloco que contém as mudanças feitas no branch que está sendo combinado. 
 
 3. Editando o Arquivo Conflitante 
 Você precisa editar o arquivo manualmente para resolver o conflito. Escolha uma das mudanças, combine ambas, ou crie uma nova solução que incorpore ambas as mudanças.
@@ -299,12 +299,29 @@ finalize o merge com um commit:
 ```
 git commit -m "Resolve conflitos de merge"
 ```
-* Ferramentas de Linha de Comando 
-Use `git status` para ver quais arquivos estão em conflito
+6. Ferramentas de Linha de Comando 
+- Use `git status` para ver quais arquivos estão em conflito
 
-Use `git diff` para visualizar as diferenças entre os arquivos conflitantes.
+- Use `git diff` para visualizar as diferenças entre os arquivos conflitantes.
 
+7. Rebase: Use `git rebase` para aplicar suas mudanças em cima do branch mais recente, evitando muitos conflitos. exemplo:
+```
+git checkout minha-branch
+git rebase main
+``` 
 
+8. KDiff3 :  é uma ferramenta de comparação e fusão de arquivos que pode ser integrada ao Git
+
+### Resolvendo Conflitos Durante um Merge 
+```
+git checkout main
+git merge feature-branch
+# Resolve conflitos conforme descrito acima
+git add arquivo-conflitante
+git commit -m "Resolve conflitos de merge"
+
+``` 
+### Pull Requests 
 
 
 
