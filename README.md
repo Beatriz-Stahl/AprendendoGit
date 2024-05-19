@@ -14,7 +14,7 @@
 1. Acesse  <http://git-scm.com/download/win> e baixe o instalador do Git para Windows.
 2. Execute o instalador e siga as instruções. Durante a instalação, você pode escolher as configurações padrão.
 
-## 1 - Configuracao Inicial do Git 
+## Configuracao Inicial do Git 
 Depois de instalar o Git, você precisa configurá-lo com seu nome de usuário e email. Isso é importante porque cada commit que você fizer usará essas informações.
 
 * Abra o Terminal (ou Git Bash no Windows).
@@ -40,7 +40,7 @@ git config --global user.name "Seu Nome"
 * Iniciar um repositório local e enviar para o remoto.
 * Iniciar um repositório  remoto e trazer para o local.
 
-## 2 - Inicializacao de um novo repositório local:
+## Inicializacao de um novo repositório local:
 1. Crie um novo diretório e navegue até ele:
 ``` 
 mkdir meu_projeto
@@ -76,7 +76,7 @@ Envie os commits locais para o repositório remoto:
 git push -u origin main
 ``` 
 
-## 3 - Inicializacao de um novo repositório remoto:
+## Inicializacao de um novo repositório remoto:
 1. Crie um novo repositório no GitHub e Copie a URL do repositório.
 
 2. Crie um novo diretório e navegue até ele:
@@ -110,7 +110,7 @@ git push -u origin main
 
 -Repositório Remoto: Onde o código é armazenado em um servidor, permitindo colaboração (ex.: GitHub, GitLab)
 
-## 4 - Trabalhando com Multiplos Branches
+## Trabalhando com Multiplos Branches
 * Criando um Novo Branch
 
 1. Para criar um novo branch, use o comando:
@@ -144,7 +144,7 @@ git push -u origin nome-da-branch
 Use branches como development e production para separar o código em diferentes estágios.
 Mescle (merge) as mudanças de development para production quando estiver pronto para o lançamento.
 
-## 5 - Integracao com IDEs
+## Integracao com IDEs
 ### VScode:
 * Instalação da extensão Git:
 1. Abra o VSCode.
@@ -176,7 +176,7 @@ Vá para Extensões (Ctrl+Shift+X) e procure por "GitLens" e "Git History".
 
 3. Use as opções no menu VCS para gerenciar branches, commits, etc.
 
-## 6 - Estrategias de Branching
+## Estrategias de Branching
 É interessante criar branchs distintas quando se tem um desenvolvimento muito grande de equipes, dessa forma podemos ter um fluxo como:
 - branch Prodution : que é a principal do sistema, é onde o software estará em produção
 - branch development : que é uma copia da prodution onde os desenvolvedores podem clonar e fazerem as modificações.
@@ -192,7 +192,7 @@ git checkout development
 git merge feature/nova_funcionalidade
 ```
 
-## 7 - Commits e Gerenciamento de Versao 
+## Commits e Gerenciamento de Versao 
 * Faça commits frequentemente para registrar o progresso:
 ```
 git add .
@@ -214,7 +214,7 @@ git push origin --tags
 ```
 git tag
 ```
-## 8 - Fluxo de Trabalho Avancado
+## Fluxo de Trabalho Avancado
 ### BACKLOG: 
 é uma lista ordenada de tudo que é conhecido que precisa ser feito no projeto.
  #### Componentes do backlog: 
