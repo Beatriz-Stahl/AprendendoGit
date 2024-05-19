@@ -173,15 +173,39 @@ Vá para Extensões (Ctrl+Shift+X) e procure por "GitLens" e "Git History".
 - branch feature : é onde os desenvolvedores vão trabalhar podendo ser varias features que ao final elas se mescle com o development.
 
 * Crie um branch para cada nova funcionalidade:
-´´´ 
+```
 git checkout -b feature/nova_funcionalidade
-´´´ 
+``` 
 * Mescle as mudanças de volta em development quando a funcionalidade estiver pronta:
-´´´
+```
 git checkout development
 git merge feature/nova_funcionalidade
-´´´ 
+```
+
 ## 7 - Commits e Gerenciamento de Versão 
+* Faça commits frequentemente para registrar o progresso:
+```
+git add .
+git commit -m "Descrição do que foi feito"
+```
+* Tagging para marcar lançamentos de versões:
+```
+git tag -a v1.0 -m "Versão 1.0"
+```
+* Envie a tag para o repositório remoto:
+```
+git push origin v1.0
+```
+* Para enviar todas as tags:
+```
+git push origin --tags 
+``` 
+* para ver todas as tags listadas:
+```
+git tag
+```
+## 8 - Fluxo de Trabalho Avançado
+
 
 
 
