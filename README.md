@@ -1,12 +1,13 @@
 # Índice
-1. [Configuração Inicial do Git](#configuração-inicial-do-git)
-2. [Inicialização de um novo repositório local](#inicialização-de-um-novo-repositório-local)
-3. [Inicialização de um novo repositório remoto](#inicialização-de-um-novo-repositório-remoto)
-4. [Trabalhando com Múltiplos Branches](#trabalhando-com-múltiplos-branches)
-5. [Integração com IDEs](#integração-com-ides)
-6. [Estratégias de Branching](#estratégias-de-branching)
-7. [Commits e Gerenciamento de Versão](#commits-e-gerenciamento-de-versão)
-8. [Fluxo de Trabalho Avançado](#fluxo-de-trabalho-avançado)
+1. [Configuração Inicial do Git](#configura%C3%A7%C3%A3o-inicial-do-git)
+2. [Inicialização de um novo repositório local](#inicializa%C3%A7%C3%A3o-de-um-novo-reposit%C3%B3rio-local)
+3. [Inicialização de um novo repositório remoto](#inicializa%C3%A7%C3%A3o-de-um-novo-reposit%C3%B3rio-remoto)
+4. [Trabalhando com Múltiplos Branches](#trabalhando-com-m%C3%BAltiplos-branches)
+5. [Integração com IDEs](#integra%C3%A7%C3%A3o-com-ides)
+6. [Estratégias de Branching](#estrat%C3%A9gias-de-branching)
+7. [Commits e Gerenciamento de Versão](#commits-e-gerenciamento-de-vers%C3%A3o)
+8. [Fluxo de Trabalho Avançado](#fluxo-de-trabalho-avan%C3%A7ado)
+
 
 #  Configuração Inicial do Git e GitHub
 * Instalação do Git No Windows
