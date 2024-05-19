@@ -166,6 +166,27 @@ Vá para Extensões (Ctrl+Shift+X) e procure por "GitLens" e "Git History".
 
 3. Use as opções no menu VCS para gerenciar branches, commits, etc.
 
+## 6 -Estratégias de Branching
+É interessante criar branchs distintas quando se tem um desenvolvimento muito grande de equipes, dessa forma podemos ter um fluxo como:
+- branch Prodution : que é a principal do sistema, é onde o software estará em produção
+- branch development : que é uma copia da prodution onde os desenvolvedores podem clonar e fazerem as modificações.
+- branch feature : é onde os desenvolvedores vão trabalhar podendo ser varias features que ao final elas se mescle com o development.
+
+* Crie um branch para cada nova funcionalidade:
+´´´ 
+git checkout -b feature/nova_funcionalidade
+´´´ 
+* Mescle as mudanças de volta em development quando a funcionalidade estiver pronta:
+´´´
+git checkout development
+git merge feature/nova_funcionalidade
+´´´ 
+## 7 - Commits e Gerenciamento de Versão 
+
+
+
+
+
 
 
 
