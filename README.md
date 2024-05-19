@@ -207,18 +207,29 @@ git tag
 ## 8 - Fluxo de Trabalho Avançado
 ### BACKLOG: 
 é uma lista ordenada de tudo que é conhecido que precisa ser feito no projeto.
- * Componentes do backlog: 
+ #### Componentes do backlog: 
 - User Stories - Descrições de funcionalidades do usuário 
 - Tasks - itens menores que descrevem o necessario para implementar o User Stories
 - Bugs - problemas a serem corrigidos 
 - Melhorias - melhorias incrementais nas funcionalidades existentes 
 
-* Gestão do Backlog:
+#### Gestão do Backlog:
 - Prioridade com base em valor de negócio e urgência.
 - Revisão Regular para garantir que esteja atualizado e refletindo as necessidades atuais do projeto.
 - Divisão em Sprints: Em metodologias ágeis, o backlog é dividido em sprints, onde um conjunto de itens é selecionado para desenvolvimento em um período específico.
 
 ### CHANGELOG: 
+Changelog é um documento que registra todas as mudanças feitas no projeto, incluindo novas funcionalidades, correções de bugs e outras alterações importantes. 
+
+#### Estrutura do Changelog
+- Versão e data : Cada entrada no changelog começa com a versão e a data de lançamento.
+`Exemplo: ## [1.2.0] - 2024-05-18 `
+
+- Categorias de Mudanças:
+Adicionado (Added) /  Mudado (Changed) / Corrigido (Fixed) / Removido (Removed) 
+
+### VERSIONAMENTO EM 3 NÍVEIS (X.Y.Z) 
+
 
 
 
