@@ -229,7 +229,28 @@ Changelog é um documento que registra todas as mudanças feitas no projeto, inc
 Adicionado (Added) /  Mudado (Changed) / Corrigido (Fixed) / Removido (Removed) 
 
 ### VERSIONAMENTO EM 3 NÍVEIS (X.Y.Z) 
+O versionamento utiliza um esquema de três números para denotar versões de software, no formato X.Y.Z, onde:
 
+1. X (Major): Incrementado para mudanças que introduzem alterações significativas.
+2. Y (Minor): Incrementado para adicionar uma nova funcionalidade sem quebrar a compatibilidade.
+3. Z (Patch):  Incrementado para correções de bugs e pequenas melhorias
+
+#### Exemplo pratico:
+- 1.0.0: Primeira versão estável.
+- 1.1.0: Adição de uma nova funcionalidade de redefinição de senha.
+- 1.1.1: Correção de bug na funcionalidade de redefinição de senha.
+- 2.0.0: Introdução de uma nova API de autenticação que quebra a compatibilidade com a versão 1.x.x.
+
+#### Integração de BACKLOG, CHANGELOG e VERSIONAMENTO 
+1. Planejamento no Backlog: Organizar tarefas e funcionalidades priorizando o que deve ser desenvolvido. 
+
+2. Desenvolvimento e Commits: Realize commits durante o desenvolvimento garantindo que cada mudança seja clara e documentada.
+
+3. Marcação de versões: lançamentos importantes com tags no Git
+
+4. Documentação no Changelog: Atualize o changelog para cada versão lançada, detalhando as mudanças feitas.
+
+## 9 - Resolução de conflitos 
 
 
 
