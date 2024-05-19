@@ -1,3 +1,13 @@
+# Índice 
+1 - [Configuração Inicial do Git](#Configuração Inicial do Git)
+2 - [Inicialização de um novo repositório local](#Inicialização de um novo repositório local)
+3 - [Inicialização de um novo repositório remoto](#Inicialização de um novo repositório remoto)
+4 - [Trabalhando com Múltiplos Branches](#Trabalhando com Múltiplos Branches)
+5 - [Integração com IDEs](#Integração com IDEs)
+6 - [Estratégias de Branching](#Estratégias de Branchings)
+7 - [Commits e Gerenciamento de Versão](#Commits e Gerenciamento de Versão ) 
+8 - [Fluxo de Trabalho Avançado](#Fluxo de Trabalho Avançado)
+
 #  Configuração Inicial do Git e GitHub
 * Instalação do Git No Windows
 
@@ -166,7 +176,7 @@ Vá para Extensões (Ctrl+Shift+X) e procure por "GitLens" e "Git History".
 
 3. Use as opções no menu VCS para gerenciar branches, commits, etc.
 
-## 6 -Estratégias de Branching
+## 6 - Estratégias de Branching
 É interessante criar branchs distintas quando se tem um desenvolvimento muito grande de equipes, dessa forma podemos ter um fluxo como:
 - branch Prodution : que é a principal do sistema, é onde o software estará em produção
 - branch development : que é uma copia da prodution onde os desenvolvedores podem clonar e fazerem as modificações.
